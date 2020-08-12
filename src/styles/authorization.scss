@@ -1,0 +1,76 @@
+.authorization_page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .inputField {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+
+            input {
+                height: 30px;
+                width: 240px;
+                border: 2px solid grey;
+                font-size: 20px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            p {
+                padding-left: 15px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .inputField:first-child {
+            margin-top: 0;
+        }
+
+        .checkField {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 13px;
+            margin-bottom: 13px;
+
+            input {
+                margin-right: 10px;
+            }
+        }
+
+        .button {
+            width: 274px;
+            height: 40px;
+            background-color: #c409d2;
+            border-radius: 3px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            background-color: purple;
+        }
+
+        .retake {
+            color: #c409d2;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .retake:hover {
+            cursor: pointer;
+            color: purple;
+        }
+    }
+}

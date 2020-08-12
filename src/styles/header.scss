@@ -1,0 +1,30 @@
+.header {
+    width: calc(100% - #{$sidebar-width});
+    height: $header-height;
+    background-color: #e2e0e0;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    left: $sidebar-width;
+    z-index: 10000;
+
+    .userPhoto {
+        width: 35px;
+        height: 35px;
+        border-radius: 40px;
+        margin-right: calc(#{$article-padding} / 2);
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    }
+}
